@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import {Link} from 'react-router-dom'
+import Home from '../pages/Home'
 
 function Index(props){
     const [newForm, setNewForm] = useState({
@@ -22,7 +23,7 @@ function Index(props){
     const handleSubmit = (event) => {
         event.preventDefault()
         props.createSite(newForm)
-        setNewSite({
+        setNewForm({
             name: '',
             url:''
         })
