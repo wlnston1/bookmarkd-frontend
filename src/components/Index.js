@@ -27,6 +27,31 @@ function Index(props){
             url:''
         })
     }
+
+    const loading = () => {
+        return <h1>Loading...</h1>
+    }
+
+    return (
+        <section>
+            <form onSubmit={handleSubmit}>
+                <input
+                type='text'
+                value={newForm.name}
+                name='name'
+                placeholder='name'
+                />
+                <input
+                type='text'
+                value={newForm.url}
+                name='url'
+                placeholder='url'
+                />
+                <input type='submit' />
+            </form>
+            {props.site ? loaded() : loading()}
+        </section>
+    )
 }
 
 export default Index
