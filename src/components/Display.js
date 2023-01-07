@@ -1,7 +1,7 @@
-function Footer(props){
+function Display(props){
     return (
     <h1>FOOTER</h1>
     )
 }
 
-export default Footer;
+export default Display;
