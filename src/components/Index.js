@@ -22,7 +22,10 @@ function Index(props){
     const handleSubmit = (event) => {
         event.preventDefault()
         props.createSite(newForm)
-        setNewSite
+        setNewSite({
+            name: '',
+            url:''
+        })
     }
 }
 
